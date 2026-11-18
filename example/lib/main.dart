@@ -4,7 +4,7 @@ import 'dart:io';
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
-import 'package:frame_encoder/frame_encoder.dart';
+import 'package:flutter_frame_encoder/flutter_frame_encoder.dart';
 
 void main() => runApp(const MaterialApp(home: BenchmarkPage()));
 
@@ -22,7 +22,7 @@ class _BenchmarkPageState extends State<BenchmarkPage> {
 
   Future<void> _run() async {
     setState(() => _running = true);
-    final out = '${Directory.systemTemp.path}/frame_encoder_benchmark.mp4';
+    final out = '${Directory.systemTemp.path}/flutter_frame_encoder_benchmark.mp4';
     final watch = Stopwatch()..start();
     try {
       final encoder = await FrameEncoder.start(
@@ -67,7 +67,7 @@ class _BenchmarkPageState extends State<BenchmarkPage> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: AppBar(title: const Text('frame_encoder benchmark')),
+        appBar: AppBar(title: const Text('flutter_frame_encoder benchmark')),
         body: Center(child: Text(_status, textAlign: TextAlign.center)),
         floatingActionButton: FloatingActionButton.extended(
           onPressed: _running ? null : _run,

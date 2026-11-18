@@ -1,4 +1,4 @@
-# frame_encoder
+# flutter_frame_encoder
 
 Turn frames you draw in Flutter into an MP4 video, on the phone, with the platform's own hardware encoder. No ffmpeg, no server.
 
@@ -12,7 +12,7 @@ Made for slideshow-style reels (photos with zoom and pan, captions, maps) drawn 
 ## Use
 
 ```dart
-import 'package:frame_encoder/frame_encoder.dart';
+import 'package:flutter_frame_encoder/flutter_frame_encoder.dart';
 
 final encoder = await FrameEncoder.start(
   width: 1080,

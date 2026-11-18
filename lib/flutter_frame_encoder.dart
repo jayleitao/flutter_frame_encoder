@@ -11,7 +11,7 @@
 /// ```
 ///
 /// Frames are written as they arrive and are never all held in memory.
-library frame_encoder;
+library flutter_frame_encoder;
 
 import 'dart:typed_data';
 import 'dart:ui' as ui;
@@ -34,7 +34,7 @@ class FrameEncoder {
   FrameEncoder._(this._id, this.width, this.height, this.fps);
 
   static const MethodChannel _channel =
-      MethodChannel('io.github.jayleitao/frame_encoder');
+      MethodChannel('io.github.jayleitao/flutter_frame_encoder');
 
   final int _id;
 

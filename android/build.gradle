@@ -1,4 +1,4 @@
-group = "io.github.jayleitao.frame_encoder"
+group = "io.github.jayleitao.flutter_frame_encoder"
 version = "0.1.0"
 
 buildscript {
@@ -24,7 +24,7 @@ apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
 
 android {
-    namespace = "io.github.jayleitao.frame_encoder"
+    namespace = "io.github.jayleitao.flutter_frame_encoder"
     compileSdk = 34
 
     compileOptions {

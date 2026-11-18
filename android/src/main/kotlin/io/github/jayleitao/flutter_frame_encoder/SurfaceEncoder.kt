@@ -1,4 +1,4 @@
-package io.github.jayleitao.frame_encoder
+package io.github.jayleitao.flutter_frame_encoder
 
 import android.graphics.Bitmap
 import android.media.MediaCodec

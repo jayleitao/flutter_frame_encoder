@@ -1,8 +1,8 @@
-name: frame_encoder
+name: flutter_frame_encoder
 description: Encode frames rendered in Flutter (raw RGBA or ui.Image) into an H.264 MP4 on iOS and Android with the platform's own encoder, and add an audio track.
 version: 0.1.0
-repository: https://github.com/jayleitao/frame_encoder
-issue_tracker: https://github.com/jayleitao/frame_encoder/issues
+repository: https://github.com/jayleitao/flutter_frame_encoder
+issue_tracker: https://github.com/jayleitao/flutter_frame_encoder/issues
 topics:
   - video
   - encoder
@@ -28,5 +28,5 @@ flutter:
       ios:
         pluginClass: FrameEncoderPlugin
       android:
-        package: io.github.jayleitao.frame_encoder
+        package: io.github.jayleitao.flutter_frame_encoder
         pluginClass: FrameEncoderPlugin

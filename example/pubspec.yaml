@@ -1,5 +1,5 @@
-name: frame_encoder_example
-description: Benchmark app for frame_encoder.
+name: flutter_frame_encoder_example
+description: Benchmark app for flutter_frame_encoder.
 publish_to: none
 
 environment:
@@ -8,7 +8,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  frame_encoder:
+  flutter_frame_encoder:
     path: ../
 
 flutter:

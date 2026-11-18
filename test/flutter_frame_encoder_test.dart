@@ -1,10 +1,10 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:frame_encoder/frame_encoder.dart';
+import 'package:flutter_frame_encoder/flutter_frame_encoder.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
-  const channel = MethodChannel('io.github.jayleitao/frame_encoder');
+  const channel = MethodChannel('io.github.jayleitao/flutter_frame_encoder');
   final calls = <MethodCall>[];
 
   setUp(() {

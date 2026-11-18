@@ -1,4 +1,4 @@
-package io.github.jayleitao.frame_encoder
+package io.github.jayleitao.flutter_frame_encoder
 
 import android.os.Handler
 import android.os.Looper
@@ -20,7 +20,7 @@ class FrameEncoderPlugin : FlutterPlugin, MethodChannel.MethodCallHandler {
   private class Session(val encoder: SurfaceEncoder, val executor: ExecutorService)
 
   override fun onAttachedToEngine(binding: FlutterPlugin.FlutterPluginBinding) {
-    channel = MethodChannel(binding.binaryMessenger, "io.github.jayleitao/frame_encoder")
+    channel = MethodChannel(binding.binaryMessenger, "io.github.jayleitao/flutter_frame_encoder")
     channel.setMethodCallHandler(this)
   }
 

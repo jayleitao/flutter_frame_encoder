@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
-  s.name             = 'frame_encoder'
+  s.name             = 'flutter_frame_encoder'
   s.version          = '0.1.0'
   s.summary          = 'Encode Flutter frames into an H.264 MP4 with AVAssetWriter.'
-  s.homepage         = 'https://github.com/jayleitao/frame_encoder'
+  s.homepage         = 'https://github.com/jayleitao/flutter_frame_encoder'
   s.license          = { :type => 'MIT', :file => '../LICENSE' }
   s.author           = { 'jayleitao' => 'https://github.com/jayleitao' }
   s.source           = { :path => '.' }

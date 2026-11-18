@@ -9,7 +9,7 @@ public class FrameEncoderPlugin: NSObject, FlutterPlugin {
 
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(
-      name: "io.github.jayleitao/frame_encoder",
+      name: "io.github.jayleitao/flutter_frame_encoder",
       binaryMessenger: registrar.messenger())
     registrar.addMethodCallDelegate(FrameEncoderPlugin(), channel: channel)
   }
@@ -103,7 +103,7 @@ enum EncoderError: Error {
 
 /// One AVAssetWriter writing H.264 from RGBA frames.
 final class EncoderSession {
-  let queue = DispatchQueue(label: "frame_encoder.session")
+  let queue = DispatchQueue(label: "flutter_frame_encoder.session")
   private let writer: AVAssetWriter
   private let input: AVAssetWriterInput
   private let adaptor: AVAssetWriterInputPixelBufferAdaptor
@@ -238,7 +238,7 @@ enum AudioMuxer {
       return completion(.failure(error))
     }
     let temp = video.deletingLastPathComponent()
-      .appendingPathComponent("frame_encoder_\(UUID().uuidString).mp4")
+      .appendingPathComponent("flutter_frame_encoder_\(UUID().uuidString).mp4")
     guard let export = AVAssetExportSession(
       asset: composition, presetName: AVAssetExportPresetPassthrough)
     else { return completion(.failure(EncoderError.writer("no export session"))) }
