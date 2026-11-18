@@ -13,7 +13,6 @@
 /// Frames are written as they arrive and are never all held in memory.
 library flutter_frame_encoder;
 
-import 'dart:typed_data';
 import 'dart:ui' as ui;
 
 import 'package:flutter/services.dart';

@@ -61,7 +61,7 @@ class _BenchmarkPageState extends State<BenchmarkPage> {
           ..addText((t * seconds).toStringAsFixed(1)))
         .build()
       ..layout(const ui.ParagraphConstraints(width: 1000));
-    canvas.drawParagraph(paragraph, Offset(80, height / 2 - 100));
+    canvas.drawParagraph(paragraph, const Offset(80, height / 2 - 100));
     return recorder.endRecording().toImage(width, height);
   }
 

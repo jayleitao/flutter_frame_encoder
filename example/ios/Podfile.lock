@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_frame_encoder (0.1.0):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_frame_encoder (from `.symlinks/plugins/flutter_frame_encoder/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_frame_encoder:
+    :path: ".symlinks/plugins/flutter_frame_encoder/ios"
+
+SPEC CHECKSUMS:
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  flutter_frame_encoder: b1cf8ceac1ba755b4c229e2a44980a07a378fcf2
+
+PODFILE CHECKSUM: 0a38712726dcad8d0ef055d443bc48eab97887a3
+
+COCOAPODS: 1.17.0
