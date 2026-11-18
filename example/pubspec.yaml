@@ -1,0 +1,15 @@
+name: frame_encoder_example
+description: Benchmark app for frame_encoder.
+publish_to: none
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  frame_encoder:
+    path: ../
+
+flutter:
+  uses-material-design: true
